@@ -1,0 +1,86 @@
+:root{
+    --light-color: #fff;
+    --gray-color: #8d99ae;
+    --warning-color: #ffbe0b;
+    --danger-color: #ba181b;
+    --success-color: #38b000;
+    --rich-black: #001219;
+    --midnight-green: #005F73;
+    --dark-cyan: #0A9396;
+    --tyffany-blue: #94D2BD;
+    --vanilla: #E9D8A6;
+    --gamboge: #EE9B00;
+    --alloy-orange: #CA6702;
+    --rust: #BB3E03;
+    --rufous: #AE2012;
+    --auburn: #9B2226;
+    
+}
+main{
+    margin: 0px;
+    padding: 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+
+nav{
+    background-color: var(--tyffany-blue);
+    text-align: center;
+    color: var(--light-color);
+}
+
+.nav-link{
+    color: var(--light-color);
+    font-size: 1em;
+    text-decoration: none;
+}
+
+.navbar-brand{
+    color: var(--light-color);
+    font-size: 1em;
+    text-decoration: none;
+    margin-top: 3px;
+}
+
+.nav-link:hover{
+    color: var(--gamboge);
+    font-size: 1.1em;
+}
+
+.navbar-brand:hover{
+    color: var(--gamboge);
+    font-size: 1.1em;
+}
+
+h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+
+.section{
+    max-width: 90%;
+    margin: auto;
+    padding: 20px;
+}
+
+.article{
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    color: var(--rufous); 
+    
+}
+
+.text-article{
+    font-size: medium;
+    color: var(--rufous);
+}
+
+footer{
+    background-color: #000;
+    color: var(--light-color);
+}
+
+a:hover{
+    color: var(--auburn)
+}
