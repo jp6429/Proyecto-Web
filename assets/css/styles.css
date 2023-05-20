@@ -1,5 +1,6 @@
 :root{
     --light-color: #fff;
+    --little-light-color: #eee;
     --gray-color: #8d99ae;
     --warning-color: #ffbe0b;
     --danger-color: #ba181b;
@@ -21,6 +22,61 @@ main{
     padding: 0px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     
+}
+
+.darkModeSwitch{
+    background: var(--tyffany-blue);
+    display:flex;
+    position: relative;
+    cursor: pointer;
+    outline: none;
+    border-style: solid;
+    border-radius: 1.5rem;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.darkModeSwitch span{
+    width:30px;
+    height:30px;
+    line-height:30px;
+    display:block;
+    color:#fff;
+    background: none;
+}
+
+.darkModeSwitch::after{
+    display:block;
+    background: #fffbf5;
+    width: 2.4rem;
+    height: 2.4rem;
+    position: absolute;
+    top:0;
+    left:0;
+    right:unset;
+    border-radius: 3rem;
+    transition: all .5s ease;
+    box-shadow: 0 0 2px 2px rgba(0, 0, 0, .5);
+    content: "";
+}
+
+.darkModeSwitch.active{
+    background: #fdd384;
+  }
+
+.darkModeSwitch.active::after{
+    left:unset;
+    right:0;
+  }
+
+body{
+    background: var(--light-color);
+    color: var(--rich-black);
+}
+
+body.dark{
+    background:  var(--gray-color);
+    color: var(--little-light-color);
 }
 
 nav{
@@ -52,28 +108,25 @@ nav{
     font-size: 1.1em;
 }
 
-h1{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+.section{
+    margin: auto;
     
 }
 
-.section{
-    max-width: 90%;
-    margin: auto;
-    padding: 20px;
-}
-
 .article{
-    padding: 10px;
-    border-radius: 5px;
+    padding: 50px;
+    border-radius: 10px;
     margin-bottom: 10px;
     color: var(--rufous); 
     
 }
 
 .text-article{
-    font-size: medium;
+    padding: 50px;
+    border-radius: 10px;
+    margin-bottom: 10px;
     color: var(--rufous);
+    
 }
 
 footer{
@@ -83,4 +136,38 @@ footer{
 
 a:hover{
     color: var(--auburn)
+}
+
+.relojFecha-tipo {
+    background-color: var(--vanilla);
+    padding:20px;
+    max-width:350px;
+    width:100%;
+    text-align:center;
+    border-radius:10px;
+    margin:0 auto;
+    margin-top:15%;
+    border: solid;
+    border-color: var(--alloy-orange);
+}
+#reloj{
+    background-color:var(--vanilla);
+    font-family: sans-serif;
+    font-size:60px;
+    text-shadow:0px 0px 1px #fff;
+    color: var(--rich-black);
+}
+#reloj span {
+    color:#888;
+    text-shadow:0px 0px 1px #333;
+    font-size:30px;
+    position:relative;
+    top:-27px;
+    left:-10px;
+}
+#fecha {
+    letter-spacing:10px;
+    font-size:14px;
+    font-family:Arial, Helvetica, sans-serif;
+    color: var(--rich-black);
 }
