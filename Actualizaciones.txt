@@ -1,3 +1,4 @@
 --21/05/2023 jp:
 
 -modo dia/noche implementado
+-cambios en los iconos
