@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="icon" href="assets/img/dog_icon.svg" type="image/x-icon">
 </head>
-<body>
+<body onload="horaActual(); obtenerClima()">
     <nav class="navbar navbar-expand-lg sticky-top">
         <div class="container">
           <a class="navbar-brand" href="index.html">
@@ -35,6 +35,22 @@
       </nav>
 <header>
   <h1 class="text-center">Soy el contenido numero 1</h1>
+  <div class="row">
+    <div class="col md-2">
+        <div id="relojFecha">
+        <div class="relojFecha-tipo">
+            <div id="reloj"></div>
+            <div id="fecha"></div>
+        </div>
+        </div>
+    </div>
+    <div class="col md-2">
+        <div class="climaTemp">
+        <h2>Temperatura:</h2>
+        <p id="temperatura"></p>
+        </div>
+    </div>
+</div>
 </header>
 <main>
   <section class="section">
@@ -71,6 +87,7 @@
     </div>
   </div>
 </footer>
+<script src="assets/js/clima.js"></script>
 <script src="assets/js/audio.js"></script>
 <script src="assets/js/val_reloj.js"></script>
 <script src="assets/js/modo_oscuro.js"></script>
