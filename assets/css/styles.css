@@ -176,13 +176,13 @@ a:hover{
 
 .relojFecha-tipo {
     background-color: var(--vanilla);
-    padding:20px;
-    max-width:350px;
+    padding:10px;
+    max-width:300px;
     width:100%;
     text-align:center;
     border-radius:10px;
     margin:0 auto;
-    margin-top:15%;
+    margin-top:5%;
     border: solid;
     border-color: var(--alloy-orange);
 }
@@ -219,4 +219,36 @@ a:hover{
 
 .dark #fecha{
     color: var(--light-color);
+}
+
+.climaTemp{
+    background-color: var(--vanilla);
+    padding:10px;
+    max-width:300px;
+    width:100%;
+    text-align:center;
+    border-radius:10px;
+    margin:0 auto;
+    margin-top:5%;
+    border: solid;
+    border-color: var(--alloy-orange);
+}
+
+.climaTemp p{
+    font-size: 30px;
+}
+
+.dark .climaTemp{
+    background-color: var(--dark-blue);
+}
+
+#map{
+    height: 500px;
+    width: 75%;
+    border-radius: 10px;
+    margin: 20px;
+  }
+
+.tituloNosotros{
+    text-align: center;
 }
