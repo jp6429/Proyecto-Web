@@ -244,11 +244,15 @@ a:hover{
 
 #map{
     height: 500px;
-    width: 75%;
+    width: 95%;
     border-radius: 10px;
     margin: 20px;
   }
 
 .tituloNosotros{
+    text-align: center;
+}
+
+.text_nosotros{
     text-align: center;
 }
