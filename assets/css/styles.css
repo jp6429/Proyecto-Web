@@ -267,7 +267,7 @@ a:hover{
 
 #map{
     height: 500px;
-    width: 75%;
+    width: 95%;
     border-radius: 10px;
     margin: 20px;
   }
@@ -275,6 +275,7 @@ a:hover{
 .tituloNosotros{
     text-align: center;
 }
+
 
 .new-nav-link-bottom{
     display: flex;
@@ -287,4 +288,7 @@ a:hover{
     text-decoration: none;
     background: none;
     border: 0;
+  
+.text_nosotros{
+    text-align: center;
 }
